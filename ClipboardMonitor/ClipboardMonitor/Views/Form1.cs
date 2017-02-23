@@ -41,6 +41,7 @@ namespace ClipboardMonitor
         private void TmMonitor_Tick(object sender, EventArgs e)
         {
             string content = ClipboardHelper.GetText();
+            pictureBox1.Image = ClipboardHelper.GetBitmap();
             TbClipboardContent.Text = content;
         }
     }
